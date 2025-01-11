@@ -1,0 +1,193 @@
+// body color
+body {
+  color: $gray;
+  width: 100%;
+  min-width: $lg-container-width;
+  -webkit-text-size-adjust: none;
+}
+
+// canvas: Prevents all touch events
+canvas {
+  touch-action: none;
+}
+
+// Typography
+h1,
+h2,
+h3,
+.body-1,
+.body-2,
+.body-3,
+.caption {
+  line-height: 150%;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 76px !important;
+  line-height: 86px !important;
+  font-family: 'Inter', sans-serif;
+}
+h2 {
+  font-size: 26px;
+}
+h3 {
+  font-size: 22px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 10px;
+}
+.body-1 {
+  font-size: 18px;
+}
+.body-2 {
+  font-size: 16px;
+}
+.body-3 {
+  font-size: 14px;
+}
+p {
+  line-height: 170%;
+}
+span {
+  font-size: 15px;
+  line-height: 24px !important;
+  color: #ffffff !important;
+}
+
+label {
+  color: #333333 !important;
+}
+.caption {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+// Shadow
+.shadow-low {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.shadow-mid {
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
+}
+.shadow-mid-right {
+  box-shadow: -1px 0px 8px 0px #0000001a;
+}
+.shadow-high {
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.16);
+}
+
+// Container
+.container {
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+// center
+.center-in-position {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-left-in-position {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// hide ruby
+.hide-normal-ruby {
+  .ruby_no_disp_for_normal {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+// text truncate
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// text decoration
+.text-underline {
+  text-decoration: underline;
+  text-decoration-color: var(--primary);
+}
+
+// break word
+.word-break-all {
+  word-break: break-all;
+}
+
+// whitespace nowrap
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.scroll-disabled {
+  overflow: hidden;
+  position: fixed;
+}
+
+.margin-center {
+  margin: 0 auto;
+}
+
+.disable-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.i-focus-visible {
+  &:focus-visible {
+    outline: 4px solid #8adaff;
+    outline-offset: 1px;
+    transition:
+      outline-offset 0s,
+      outline 0s;
+  }
+}
+
+@keyframes flickerKeyFrame {
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.flicker {
+  animation: flickerKeyFrame 1.5s cubic-bezier(0.1, -0.6, 0.2, 0) infinite;
+}
+
+.font-default {
+  font-family: 'Inter' !important;
+}
+
+.bg-black-list {
+  background-color: #ffe0e0;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.left-5 {
+  left: 5px;
+}

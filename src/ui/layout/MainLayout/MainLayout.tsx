@@ -1,11 +1,16 @@
-import { FC } from 'react';
+import { FC, ReactNode } from 'react';
 import MenuLayout from '../Menu/Menu';
 
-interface IMainLayout {}
+interface IMainLayout {
+  children: ReactNode
+}
 
-const MainLayout: FC<IMainLayout> = ({}) => {
+const MainLayout: FC<IMainLayout> = ({children}) => {
   return (
-    <MenuLayout/>
+    <>
+      <MenuLayout/>
+      {children}
+    </>
   );
 };
 
